@@ -5,15 +5,16 @@ function App() {
 
   // Declare a new state variable, which we'll call "count" & initialize it to 0
   const [count, setCount] = useState(0);
-  let initialCount = count;
+  const initialCount = count;
+  let finalCount =0;
   if (count==0) {
-    let finalCount = count +1;
-    setCount(finalCount);
+    finalCount = count +1;
   }
   return (
     <div>
       <p>Initially count was {initialCount}.</p>
-      <p>After I set it count is {count}.</p>
+      <p>After I increment it, count is {finalCount}.</p>
+      <p>Value of count is {count}.</p>
     </div>
   );
 }
