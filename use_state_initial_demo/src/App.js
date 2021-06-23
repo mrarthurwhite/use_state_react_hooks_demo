@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <p>Initially count was {initialCount}.</p>
-      <p>After I increment it, count is {finalCount}.</p>
+      <p>After I assign an incremented count to another variable, final count is: {finalCount}.</p>
       <p>Value of count is {count}.</p>
     </div>
   );
